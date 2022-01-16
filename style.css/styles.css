@@ -1,0 +1,90 @@
+/* font  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+/* common styles */
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    margin-bottom: 100px;
+    padding: 100px;
+}
+
+/* influencer-style */
+.influencer{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    justify-items: center;
+}
+.influencer img{
+    width: 300px;
+    height: 300px;
+}
+.influencer img:hover{
+    transform: scale(1.2);
+}
+.section-title{
+    font-size: 52px;
+}
+button{
+    color: #FFFFFF;
+    background-color: #E02C6D;
+    font-size: 16px;
+    border-radius: 41px;
+    padding: 10px 24px;
+}
+hr{
+    margin-bottom: 100px;
+}
+/* Popular collection style  */
+#section-header{
+    text-align: center;
+}
+.popular-collections{
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    justify-items: center;
+}
+.product-details{
+    display: flex;
+}
+.another-page{
+    color: #E02C6D;
+    text-align: right;
+}
+/* Natural beauty styles  */
+.natural-beauty{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    justify-items: center;
+}
+/* footer  */
+footer{
+    color: #FFFFFF;
+    background-color: black;
+    text-align: center;
+}
+/* ----------------------
+    @Media Queries
+--------------------------  */
+/* Mobile Devices  */
+@media only screen and (max-width:688px) {
+    .container{
+        width: 100%;
+        height: 100%;
+    }
+    .influencer, .popular-collections, .natural-beauty, footer{
+        grid-template-columns: repeat(1,1fr);
+    }
+    
+}
+
+/* tablet devices  */
+@media only screen and (min-width:688px) and (max-width:992px) {
+    .popular-collections{
+        grid-template-columns: repeat(2,1fr);
+    }    
+}
